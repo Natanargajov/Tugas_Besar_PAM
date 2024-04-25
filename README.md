@@ -2,7 +2,7 @@
 
 ## Introduction
 
-<ol>
+<ol type='a'>
   <li><b>Project Title</b></li><br>
   <p>Aplikasi Pencarian Tempat Makan (<b>Eatera</b>)</p><br>
   
@@ -10,18 +10,18 @@
   <p>Eatera merupakan aplikasi pencarian masakan/tempat makan yang memudahkan pengguna untuk menemukan pilihan makanan        terbaik di berbagai tempat khususnya di sekitar kampus     ITERA. Dengan fitur pencarian canggih dan rekomendasi            personal, pengguna dapat dengan mudah menemukan tempat makan berdasarkan lokasi, jenis masakan, jarak, dan rating.          Eatera juga memungkinkan pengguna untuk melihat ulasan, menu, dan informasi lainnya yang berkaitan tentang tempat makan     yang ingin dilihat. Kemudian pengguna dapat menyimpan   daftar tempat makanan yang disukai ke daftar favorit. </p><br>
   
   <li><b>Project Team</b></li><br>
-  <ul>
+  <ul type='disc'>
     <li>Rizki Esa Fadillah		 	121140084</li>
     <li>Fandu Dipo Anderson 		121140033</li>
     <li>Dimas Saputra		 	121140059</li>
     <li>Adriel Gideon Benedict Sirait 	121140196</li>
     <li>Natanael Argajova 			121140205</li>
   </ul>
-</ol>	
+</ol>
 
 ## Proposed Application
 
-<ol>
+<ol type='a'>
   <li><b>Application Description</b></li><br>
   <p>Aplikasi ini bertujuan untuk membantu pengguna menemukan tempat makan terdekat berdasarkan preferensi pengguna.<br><br>
   Halaman Beranda: Halaman ini adalah pusat informasi utama dalam Eatera. Di sini, pengguna akan menemukan pilihan restoran   dan masakan yang disesuaikan dengan preferensi mereka. Pengguna juga dapat menjelajahi restoran dan masakan lainnya         dengan menggunakan fitur pencarian atau menavigasi melalui kategori yang tersedia.<br><br>
@@ -38,11 +38,11 @@
 
 ## System Planning
 
-<ol>
+<ol type='a'>
   <li><b>Application Architecture</b></li><br>
   <p>Aplikasi Eatera menggunakan arsitektur MVVM (Model-View-ViewModel) sebagai dasar aplikasinya. Dalam arsitektur ini,      aplikasi terbagi menjadi tiga bagian utama: </p><br>
   
-  <ul>
+  <ul type='disc'>
     <li><i>Model</i>: Bagian ini bertanggung jawab atas logika bisnis dan data aplikasi. Model mewakili sumber daya data        seperti tempat-tempat makan dan menyediakan operasi untuk mengambil, menyimpan, dan memperbarui data. Ini juga dapat        mencakup integrasi dengan layanan pihak ketiga, seperti Google Places API, untuk mengambil informasi tempat makan. </li>
     <br>
     <li><i>View</i>: Bagian ini adalah antarmuka pengguna (UI) yang dilihat dan digunakan oleh pengguna. View hanya             menampilkan informasi dan mengirim perintah ke ViewModel. Dalam konteks aplikasi ini, View akan menampilkan daftar          tempat makan, detail tempat makan, kolom pencarian, dan lainnya. </li>
@@ -52,14 +52,16 @@
   
   <p>Dengan menggunakan arsitektur MVVM, Eatera memisahkan peran antara logika aplikasi dan tampilan pengguna, sehingga       memudahkan pengembangan tim yang terdiri dari desainer dan pengembang. Tim desainer dapat fokus pada desain antarmuka       pengguna tanpa perlu memperhatikan logika aplikasi, sementara tim pengembang dapat berkonsentrasi pada implementasi         logika aplikasi tanpa harus terganggu oleh tampilan pengguna. Hal ini meningkatkan efisiensi pengembangan aplikasi dan      memungkinkan kolaborasi yang lebih baik antara anggota tim.	</p><br
   
-  <li><b>Entity Relationship Diagram (ERD)</b></li><br>
-  <img src=""><br>
-  <p></p><br>
+  <li><b>Entity Relationship Diagram (ERD)</b></li><br><br>
+  <img src="https://github.com/121140084-Rizki-Esa-Fadillah/Tugas_Besar_PAM/blob/main/Image/ERD_PAM.png"
+    width = "750"
+    height = "350"><br>
+  <p>Dari diagram ER di atas, ada empat entitas utama yaitu "Tempat Makan", "Daftar Favorit", "User", dan "Detail Tempat      Makan". Setiap entitas memiliki atributnya sendiri. "user" dalam hubungannya dengan "Tempat Makan" dan "Daftar Favorit"     adalah "Akses", sementara "Tempat Makan" dan “Daftar Favorit” dalam hubungannya dengan "Detail Tempat Makan" adalah         "Memiliki".</p><br>
   
   <li><b>UML Design</b></li><br>
-  <ul>
+  <ul type='disc'>
     <li><i>Activity Diagram</i></li><br>
-      <ol>
+      <ol type='1'>
         <li></li>
           <img src="">
         <li></li>
@@ -76,7 +78,7 @@
           <img src="">
       </ol><br>
     <li><i>Sequence Diagram</i></li><br>
-      <ol>
+      <ol type='1'>
         <li></li>
           <img src="">
         <li></li>
@@ -95,18 +97,28 @@
   </ul><br>
 
   <li><b>Class Diagram</b></li><br>
-  <img src="">
-  <p></p><br>
-  <ol>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
+  <img src="https://github.com/121140084-Rizki-Esa-Fadillah/Tugas_Besar_PAM/blob/main/Image/ERD_PAM.png"
+    width = "750"
+    height = "350"><br>
+  <p>
+    Dalam Class Diagram ini terdapat 6 kelas, antara lain : User, Tempat Makan, Search, Profil, List, dan Favorite List.      </p>
+  <ol type='1'>
+    <li>Kelas User memiliki lima atribut antara lain atribut Nama, Jenis Kelamin, Usia, Email dan Password. Dengan              menggunakan atribut-atribut ini, kita dapat menjalankan 2 metode, yaitu login atau register.</li><br>
+    <li>Kelas Tempat Makan memiliki atribut-atribut yang digunakan untuk menjelaskan detail informasi seputar tempat makan      yang sedang dilihat, mulai dari Nama, Jarak, Rating, Jenis Masakan, Alamat, Jam Operasional, Menu Makanan, dan Ulasan.      Dengan atribut-atribut tersebut, akan ada 2 metode yang dapat dijalankan: <br>
+    a. Search_tempat_makan: untuk mencari tempat makan sesuai preferensi user.<br>
+    b. Add_to_favorite: untuk menambahkan tempat makan tersebut ke daftar favorit user. 
+    </li><br>
+    <li>Kelas Search akan digunakan untuk menjalankan 4 fungsi antara lain: search_by_nama (berdasarkan nama tempat makan),     search_by_jenis_masakan (berdasarkan jenis masakan), search_by_rating (berdasarkan rating pelanggan), dan                   search_by_jarak (berdasarkan jarak antara pengguna dengan tempat makanan). Fungsi - fungsi ini dapat digunakan untuk        mencari tempat makan yang sesuai dengan preferensi user dengan menggunakan kolom pencarian pada aplikasi. </li><br>
+    <li>Kelas List akan berisi semua tempat makan yang telah ditambahkan oleh user ke daftar favorite. Kelas ini akan           berisi beberapa atribut tentang tempat makan yang telah ditambahkan ke dalam daftar favorit, seperti nama,jenis             masakan, jarak dan rating. Dan user dapat menggunakan atribut ini untuk mencari tempat makan tersebut di dalam daftar       (search_list) atau untuk menghapusnya dari daftar (delete_from_list). Kelas ini juga memiliki kelas turunan yaitu           Favorite List. </li><br>
+    <li>Kelas Profile akan terdiri dari beberapa atribut tentang pengguna, seperti Nama, Jenis Kelamin, Usia, Email dan         Password. Dalam kelas ini pengguna dapat menjalankan beberapa metode seperti: <br>
+    a. Edit_profile: untuk mengubah data profil user.<br>
+    b. See_favorite_list: untuk masuk ke halaman daftar favorit.<br>
+    c. Logout: untuk keluar dari akun kita.
+    </li>
   </ol><br>
   
   <li><b>UI Design (Figma)</b></li><br>
-  <ol>
+  <ol type='1'>
     <li></li>
     <li></li>
   </ol><br>
@@ -114,7 +126,7 @@
 
 ## Application Development Stage
 
-<ol>
+<ol type='a'>
   <li><b>Implementation Stage</b></li><br>
   <p>Pada pembuatan aplikasi Eatera, kami menggunakan metode waterfall yang dijabarkan dalam berbagai tahap berikut:<br><br>
   Perencanaan: Pertama kami akan melakukan analisis kebutuhan pengguna, hasil dari tahap ini adalah dokumen spesifikasi       yang mencakup semua fitur dan fungsionalitas yang dibutuhkan oleh pengguna. Fitur utama yang akan diperlihatkan seperti     pencarian masakan sesuai preferensi, menu, daftar favorit, serta ulasan pengguna.<br><br>
