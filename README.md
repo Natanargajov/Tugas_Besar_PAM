@@ -4,10 +4,10 @@
 
 <ol>
   <li><b>Project Title</b></li><br>
-  <p>Aplikasi Pencarian Tempat Makan (Eatera)</p><br>
+  <p>Aplikasi Pencarian Tempat Makan (<b>Eatera</b>)</p><br>
   
   <li><b>Short Description</b></li><br>
-  <p>Eatera merupakan aplikasi pencarian masakan/tempat makan yang memudahkan pengguna untuk menemukan pilihan makanan terbaik di berbagai tempat khususnya di sekitar kampus     ITERA. Dengan fitur pencarian canggih dan rekomendasi personal, pengguna dapat dengan mudah menemukan tempat makan berdasarkan lokasi, jenis masakan, jarak, dan rating.        Eatera juga memungkinkan pengguna untuk melihat ulasan, menu, dan informasi lainnya yang berkaitan tentang tempat makan yang ingin dilihat. Kemudian pengguna dapat menyimpan   daftar tempat makanan yang disukai ke daftar favorit. </p><br>
+  <p>Eatera merupakan aplikasi pencarian masakan/tempat makan yang memudahkan pengguna untuk menemukan pilihan makanan        terbaik di berbagai tempat khususnya di sekitar kampus     ITERA. Dengan fitur pencarian canggih dan rekomendasi            personal, pengguna dapat dengan mudah menemukan tempat makan berdasarkan lokasi, jenis masakan, jarak, dan rating.          Eatera juga memungkinkan pengguna untuk melihat ulasan, menu, dan informasi lainnya yang berkaitan tentang tempat makan     yang ingin dilihat. Kemudian pengguna dapat menyimpan   daftar tempat makanan yang disukai ke daftar favorit. </p><br>
   
   <li><b>Project Team</b></li><br>
   <ul>
@@ -127,5 +127,7 @@
   <li><b>Time Plan</b></li><br>
   <p>Proyek dimulai pada tanggal 11 April 2024 dan akan berakhir pada tanggal 23 Mei 2024. Pengembangan Aplikasi Eatera       akan dimulai pada tanggal 25 April 2024 dan diperkirakan akan memakan waktu sekitar 5 minggu untuk diselesaikan.	
   </p><br>
-  <img src="">
+  <img src="https://github.com/121140084-Rizki-Esa-Fadillah/Tugas_Besar_PAM/blob/main/Image/Timeline_UAS_PAM.png"
+    width = "750"
+    height = "350">
 </ol>
