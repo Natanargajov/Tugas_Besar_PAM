@@ -97,9 +97,9 @@
   </ul><br>
 
   <li><b>Class Diagram</b></li><br>
-  <img src="https://github.com/121140084-Rizki-Esa-Fadillah/Tugas_Besar_PAM/blob/main/Image/ERD_PAM.png"
+  <img src="https://github.com/121140084-Rizki-Esa-Fadillah/Tugas_Besar_PAM/blob/main/Image/Class_Diagram_PAM.png"
     width = "750"
-    height = "350"><br>
+    height = "750"><br>
   <p>
     Dalam Class Diagram ini terdapat 6 kelas, antara lain : User, Tempat Makan, Search, Profil, List, dan Favorite List.      </p>
   <ol type='1'>
