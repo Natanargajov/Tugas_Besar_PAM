@@ -1,5 +1,6 @@
 package com.example.tugas_besar_pam
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
@@ -12,6 +13,7 @@ import android.widget.ProgressBar
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import android.view.animation.AnimationUtils
+import androidx.navigation.fragment.findNavController
 
 class SplashFragment : Fragment() {
 
@@ -44,6 +46,7 @@ class SplashFragment : Fragment() {
 
         // Menunda tampilan ProgressBar setelah animasi logo_eatera selesai
         Handler(Looper.getMainLooper()).postDelayed({
+
             // Jalankan proses dengan interval tertentu untuk memperbarui ProgressBar
             val handler = Handler(Looper.getMainLooper())
             handler.postDelayed(object : Runnable {
@@ -55,13 +58,23 @@ class SplashFragment : Fragment() {
                         currentStep++
                         handler.postDelayed(this, progressInterval)
                     } else {
-                        navigateToMainActivity()
+                        if (onBoardingIsFinished()){
+                            findNavController().navigate(R.id.action_splashFragment_to_registerActivity)
+                        } else {
+                            findNavController().navigate(R.id.navigation_splashFragment_to_onBoardingFragment)
+                        }
+
                     }
                 }
             }, progressInterval)
         }, logoAnimationDuration)
 
         return view
+    }
+
+    private fun onBoardingIsFinished(): Boolean{
+        val sharedPreferences = requireActivity().getSharedPreferences("onBoarding", Context.MODE_PRIVATE)
+        return sharedPreferences.getBoolean("finished", false)
     }
 
     private fun navigateToMainActivity() {

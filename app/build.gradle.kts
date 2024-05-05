@@ -73,4 +73,7 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
     implementation("androidx.core:core-ktx:1.12.0")
+
+    //Page Indikator
+    implementation("com.tbuonomo:dotsindicator:5.0")
 }
