@@ -27,8 +27,8 @@
             app:popUpTo="@id/splashFragment"
             app:popUpToInclusive="true" />
         <action
-            android:id="@+id/action_splashFragment_to_registerActivity"
-            app:destination="@id/registerActivity"
+            android:id="@+id/action_splashFragment_to_searchActivity"
+            app:destination="@id/searchActivity"
             app:popUpTo="@id/splashFragment"
             app:popUpToInclusive="true" />
     </fragment>
@@ -37,4 +37,14 @@
         android:name="com.example.tugas_besar_pam.RegisterActivity"
         android:label="activity_register"
         tools:layout="@layout/activity_register" />
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.example.tugas_besar_pam.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
+    <activity
+        android:id="@+id/searchActivity"
+        android:name="com.example.tugas_besar_pam.SearchActivity"
+        android:label="activity_search"
+        tools:layout="@layout/activity_search" />
 </navigation>
