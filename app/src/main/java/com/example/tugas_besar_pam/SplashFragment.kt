@@ -59,7 +59,8 @@ class SplashFragment : Fragment() {
                         handler.postDelayed(this, progressInterval)
                     } else {
                         if (onBoardingIsFinished()){
-                            findNavController().navigate(R.id.action_splashFragment_to_registerActivity)
+                            findNavController().navigate(R.id.navigation_splashFragment_to_onBoardingFragment)
+                            //findNavController().navigate(R.id.action_splashFragment_to_registerActivity) # Ubah kalo dah clear semua
                         } else {
                             findNavController().navigate(R.id.navigation_splashFragment_to_onBoardingFragment)
                         }
@@ -75,9 +76,5 @@ class SplashFragment : Fragment() {
     private fun onBoardingIsFinished(): Boolean{
         val sharedPreferences = requireActivity().getSharedPreferences("onBoarding", Context.MODE_PRIVATE)
         return sharedPreferences.getBoolean("finished", false)
-    }
-
-    private fun navigateToMainActivity() {
-        navController.navigate(R.id.navigation_splashFragment_to_onBoardingFragment)
     }
 }
