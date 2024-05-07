@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "199807708617",
+    "project_id": "tugas-besar-pam-f1260",
+    "storage_bucket": "tugas-besar-pam-f1260.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:199807708617:android:5c7e9c38a1d98666dccc18",
+        "android_client_info": {
+          "package_name": "com.example.tugas_besar_pam"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApNrwlwDoXZT0pgnz2NS2VWut_gYJ-1js"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
