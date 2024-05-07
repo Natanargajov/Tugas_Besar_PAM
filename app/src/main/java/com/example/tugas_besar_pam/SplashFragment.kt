@@ -59,7 +59,7 @@ class SplashFragment : Fragment() {
                         handler.postDelayed(this, progressInterval)
                     } else {
                         if (onBoardingIsFinished()){
-                            findNavController().navigate(R.id.action_splashFragment_to_searchActivity)
+                            findNavController().navigate(R.id.action_splashFragment_to_loginActivity)
                             //findNavController().navigate(R.id.action_splashFragment_to_registerActivity) # Ubah kalo dah clear semua
                         } else {
                             findNavController().navigate(R.id.navigation_splashFragment_to_onBoardingFragment)
