@@ -15,7 +15,10 @@
         android:theme="@style/AppTheme"
         tools:targetApi="34">
         <activity
-            android:name=".MainActivity"
+            android:name=".EditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
             android:exported="true" />
         <activity
             android:name=".LoginActivity"
@@ -24,7 +27,7 @@
             android:name=".RegisterActivity"
             android:exported="true" />
         <activity
-            android:name=".SplashActivity"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

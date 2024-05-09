@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ProfileFragment">
 
     <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:background="#FFFFFFFF"
         android:clipChildren="false"
         android:clipToPadding="false"
@@ -41,8 +40,7 @@
                         android:id="@+id/r7zgiaeas15k_rl"
                         android:layout_width="125dp"
                         android:layout_height="125dp"
-                        android:layout_marginEnd="17dp"
-                        >
+                        android:layout_marginEnd="17dp">
                         <ImageView
                             android:id="@+id/imageProfile"
                             android:layout_width="125dp"
@@ -66,7 +64,7 @@
                                 android:id="@+id/haiTextView"
                                 android:textColor="#000000"
                                 android:textSize="20sp"
-                                android:layout_marginBottom="23dp"
+                                android:layout_marginBottom="15dp"
                                 android:layout_height="wrap_content"
                                 android:layout_width="wrap_content"
                                 android:text="Hai "
@@ -75,33 +73,28 @@
                                 android:id="@+id/nameTextView"
                                 android:textColor="#000000"
                                 android:textSize="20sp"
-                                android:layout_marginBottom="23dp"
+                                android:layout_marginBottom="15dp"
                                 android:layout_height="wrap_content"
                                 android:layout_width="wrap_content"
                                 android:text="User"
                                 />
                         </LinearLayout>
 
-                        <LinearLayout
+                        <Button
                             android:id="@+id/editButton"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center_horizontal"
-                            android:background="@drawable/button"
-                            android:paddingVertical="14dp"
-                            android:layout_marginRight="80dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="50dp"
+                            android:backgroundTint="@drawable/button"
                             android:clickable="true"
                             android:focusable="true"
-                            android:orientation="vertical">
-                            <TextView
-                                android:id="@+id/textEditButton"
-                                android:textColor="#FFFFFF"
-                                android:textSize="14sp"
-                                android:layout_height="wrap_content"
-                                android:layout_width="wrap_content"
-                                android:text="Edit"
-                                />
-                        </LinearLayout>
+                            android:gravity="center_horizontal"
+                            android:paddingVertical="10dp"
+                            android:text="Edit"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold"/>
+
                     </LinearLayout>
                 </LinearLayout>
                 <TextView
@@ -114,15 +107,13 @@
                     android:layout_width="wrap_content"
                     android:text="E-mail"
                     />
-                <LinearLayout
+                <View
                     android:id="@+id/line1"
                     android:layout_width="209dp"
                     android:layout_height="2dp"
-                    android:background="#FF000000"
-                    android:layout_marginBottom="48dp"
-                    android:layout_marginHorizontal="38dp"
-                    android:orientation="vertical">
-                </LinearLayout>
+                    android:layout_marginBottom="42dp"
+                    android:layout_marginHorizontal="32dp"
+                    android:background="#FF000000" />
                 <TextView
                     android:id="@+id/usiaTextView"
                     android:textColor="#000000"
@@ -133,15 +124,13 @@
                     android:layout_width="wrap_content"
                     android:text="Usia"
                     />
-                <LinearLayout
+                <View
                     android:id="@+id/line2"
                     android:layout_width="209dp"
                     android:layout_height="2dp"
-                    android:background="#FF000000"
                     android:layout_marginBottom="42dp"
-                    android:layout_marginHorizontal="38dp"
-                    android:orientation="vertical">
-                </LinearLayout>
+                    android:layout_marginHorizontal="32dp"
+                    android:background="#FF000000" />
                 <TextView
                     android:id="@+id/jkTextView"
                     android:textColor="#000000"
@@ -152,15 +141,13 @@
                     android:layout_width="wrap_content"
                     android:text="Jenis Kelamin"
                     />
-                <LinearLayout
+                <View
                     android:id="@+id/line3"
                     android:layout_width="209dp"
                     android:layout_height="2dp"
-                    android:background="#FF000000"
                     android:layout_marginBottom="42dp"
-                    android:layout_marginHorizontal="41dp"
-                    android:orientation="vertical">
-                </LinearLayout>
+                    android:layout_marginHorizontal="32dp"
+                    android:background="#FF000000" />
                 <TextView
                     android:id="@+id/bioTextView"
                     android:textColor="#000000"
@@ -171,36 +158,24 @@
                     android:layout_width="wrap_content"
                     android:text="Bio"
                     />
-                <LinearLayout
+                <View
                     android:id="@+id/line4"
                     android:layout_width="209dp"
                     android:layout_height="2dp"
-                    android:background="#FF000000"
-                    android:layout_marginBottom="101dp"
-                    android:layout_marginHorizontal="41dp"
-                    android:orientation="vertical">
-                </LinearLayout>
-                <LinearLayout
+                    android:layout_marginBottom="42dp"
+                    android:layout_marginHorizontal="32dp"
+                    android:background="#FF000000" />
+                <Button
                     android:id="@+id/logoutButton"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
-                    android:background="@drawable/button_simpan"
-                    android:paddingVertical="17dp"
-                    android:layout_marginBottom="90dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:backgroundTint="@drawable/button_simpan"
+                    android:paddingVertical="12dp"
+                    android:layout_marginBottom="50dp"
                     android:layout_marginHorizontal="105dp"
-                    android:clickable="true"
-                    android:focusable="true"
-                    android:orientation="vertical">
-                    <TextView
-                        android:id="@+id/textLogoutButton"
-                        android:textColor="#FFFFFF"
-                        android:textSize="20sp"
-                        android:layout_height="wrap_content"
-                        android:layout_width="wrap_content"
-                        android:text="Logout"
-                        />
-                </LinearLayout>
+                    android:text="Logout" />
             </LinearLayout>
         </ScrollView>
     </LinearLayout>

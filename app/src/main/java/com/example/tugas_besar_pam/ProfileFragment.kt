@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.google.firebase.auth.FirebaseAuth
@@ -20,7 +21,7 @@ class ProfileFragment : Fragment() {
     private lateinit var emailTextView: TextView
     private lateinit var buttonLogout: Button
     private lateinit var buttonEdit: Button
-    private lateinit var imageProfile: TextView
+    private lateinit var imageProfile: ImageView
     private lateinit var usiaTextView: TextView
     private lateinit var jkTextView: TextView
     private lateinit var bioTextView: TextView
@@ -52,9 +53,10 @@ class ProfileFragment : Fragment() {
         }
 
         buttonEdit.setOnClickListener {
-            val intent = Intent(requireContext(), EditProfileFragment::class.java)
+            val intent = Intent(requireContext(), EditProfileActivity::class.java)
             startActivity(intent)
         }
+
 
         val currentUser = firebaseAuth.currentUser
         currentUser?.uid?.let { userId ->
@@ -74,13 +76,13 @@ class ProfileFragment : Fragment() {
                         jkTextView.text = jk
                         bioTextView.text = bio
 
-                        val nameParts = name.split(" ")
-                        val initials = if (nameParts.isNotEmpty()) {
-                            nameParts[0].firstOrNull()?.toString() ?: ""
-                        } else {
-                            ""
-                        }
-                        imageProfile.text = initials
+                        //val nameParts = name.split(" ")
+                        //val initials = if (nameParts.isNotEmpty()) {
+                        //    nameParts[0].firstOrNull()?.toString() ?: ""
+                        //} else {
+                        //    ""
+                        //}
+                        //imageProfile.text = initials
 
                     } else {
                         println("Data not found")

@@ -3,6 +3,8 @@
     <color name="primary">#F8541D</color>
     <color name="dark">#FF2C3E50</color>
     <color name="sub_primary">#80F8541D</color>
+    <color name="alt_primary">#EF8D6D</color>
+    <color name="alt_primary_2">#F3511B</color>
     <color name="title">#191C1E</color>
     <color name="text">#424242</color>
     <color name="black">#FF000000</color>

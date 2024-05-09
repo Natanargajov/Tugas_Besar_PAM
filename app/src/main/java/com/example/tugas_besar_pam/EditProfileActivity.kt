@@ -2,43 +2,45 @@ package com.example.tugas_besar_pam
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatActivity
 import android.widget.Button
+import android.widget.EditText
+import android.widget.ImageView
 import android.widget.TextView
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 
-class EditProfileFragment : Fragment() {
+class EditProfileActivity : AppCompatActivity() {
 
     private lateinit var firebaseAuth: FirebaseAuth
     private lateinit var db: FirebaseFirestore
-    private lateinit var nameEditText: TextView
-    private lateinit var emailEditText: TextView
+    private lateinit var nameEditText: EditText
+    private lateinit var emailEditText: EditText
     private lateinit var saveButton: Button
-    private lateinit var imageProfile: TextView
-    private lateinit var usiaEditText: TextView
-    private lateinit var jkEditText: TextView
-    private lateinit var bioEditText: TextView
+    private lateinit var imageProfile: ImageView
+    private lateinit var usiaEditText: EditText
+    private lateinit var jkEditText: EditText
+    private lateinit var bioEditText: EditText
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        val view = inflater.inflate(R.layout.fragment_edit_profile, container, false)
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_edit_profile)
 
         db = FirebaseFirestore.getInstance()
         firebaseAuth = FirebaseAuth.getInstance()
 
-        saveButton = view.findViewById(R.id.simpanButton)
-        imageProfile = view.findViewById(R.id.imageProfile)
-        nameEditText = view.findViewById(R.id.nameEditText)
-        emailEditText = view.findViewById(R.id.emailEditText)
-        usiaEditText = view.findViewById(R.id.usiaEditText)
-        jkEditText = view.findViewById(R.id.jkEditText)
-        bioEditText = view.findViewById(R.id.bioEditText)
+        saveButton = findViewById(R.id.simpanButton)
+        imageProfile = findViewById(R.id.imageProfile)
+        nameEditText = findViewById(R.id.nameEditText)
+        emailEditText = findViewById(R.id.emailEditText)
+        usiaEditText = findViewById(R.id.usiaEditText)
+        jkEditText = findViewById(R.id.jkEditText)
+        bioEditText = findViewById(R.id.bioEditText)
+
+        val back: ImageView = findViewById(R.id.back)
+        back.setOnClickListener {
+            finish()
+        }
 
         saveButton.setOnClickListener {
 
@@ -62,14 +64,12 @@ class EditProfileFragment : Fragment() {
                 db.collection("users").document(userId)
                     .set(updateUserData)
                     .addOnSuccessListener { _ ->
-                        val intent = Intent(requireContext(), ProfileFragment::class.java)
-                        startActivity(intent)
+                        finish()
                     }
                     .addOnFailureListener { exception ->
                         println("Error updating document: $exception")
                     }
             }
         }
-        return view
     }
 }
