@@ -106,16 +106,16 @@
 
                 <EditText
                     android:id="@+id/emailEditText"
-                    android:textColor="#000000"
-                    android:textSize="14sp"
-                    android:layout_marginBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_marginLeft="51dp"
                     android:layout_marginRight="170dp"
-                    android:layout_height="wrap_content"
-                    android:layout_width="match_parent"
-                    android:hint="E-mail"
+                    android:layout_marginBottom="5dp"
                     android:background="@android:color/transparent"
-                    android:paddingVertical="10dp" />
+                    android:hint="E-mail"
+                    android:paddingVertical="10dp"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
                 <View
                     android:id="@+id/line2"
                     android:layout_width="209dp"

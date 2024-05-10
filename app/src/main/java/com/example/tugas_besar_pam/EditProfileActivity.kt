@@ -42,6 +42,7 @@ class EditProfileActivity : AppCompatActivity() {
             finish()
         }
 
+        val saveButton: Button = findViewById(R.id.simpanButton)
         saveButton.setOnClickListener {
 
             val name = nameEditText.text.toString()
@@ -68,6 +69,7 @@ class EditProfileActivity : AppCompatActivity() {
                     }
                     .addOnFailureListener { exception ->
                         println("Error updating document: $exception")
+                        finish()
                     }
             }
         }

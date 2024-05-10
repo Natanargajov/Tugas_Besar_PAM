@@ -30,8 +30,7 @@
                     android:id="@+id/rd4bdtgm8lo7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="48dp"
-                    >
+                    android:layout_marginBottom="48dp">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -41,8 +40,7 @@
                             android:layout_width="200dp"
                             android:layout_height="200dp"
                             android:src="@drawable/bg_circle"
-                            android:scaleType="fitXY"
-                            />
+                            android:scaleType="fitXY" />
                     </LinearLayout>
                     <TextView
                         android:id="@+id/judul"
@@ -55,8 +53,7 @@
                         android:layout_height="wrap_content"
                         android:layout_width="match_parent"
                         android:gravity="center"
-                        android:text="Registrasi ke EATERA"
-                        />
+                        android:text="Registrasi ke EATERA" />
                 </RelativeLayout>
                 <TextView
                     android:id="@+id/rzu52yj9f0jj"
@@ -68,11 +65,10 @@
                     android:layout_width="match_parent"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="Daftar Sekarang dan Mulai Petualangan \nKuliner Anda !"
-                    />
+                    android:text="Daftar Sekarang dan Mulai Petualangan \nKuliner Anda !" />
                 <EditText
                     android:inputType="text"
-                    android:text="Enter your full name"
+                    android:hint="Enter your full name"
                     android:id="@+id/nameEditText"
                     android:textColor="#000000"
                     android:textSize="14sp"
@@ -87,7 +83,7 @@
                     />
                 <EditText
                     android:inputType="text"
-                    android:text="Enter you email"
+                    android:hint="Enter you email"
                     android:id="@+id/emailEditText"
                     android:textColor="#000000"
                     android:textSize="14sp"
@@ -102,7 +98,7 @@
                     />
                 <EditText
                     android:inputType="text"
-                    android:text="Create password"
+                    android:hint="Create password"
                     android:id="@+id/passwordEditText"
                     android:textColor="#000000"
                     android:textSize="14sp"
@@ -115,21 +111,39 @@
                     android:paddingHorizontal="20dp"
                     android:elevation="4dp"
                     />
-                <EditText
-                    android:inputType="text"
-                    android:text="Confirm password"
-                    android:id="@+id/confirmPasswordEditText"
-                    android:textColor="#000000"
-                    android:textSize="14sp"
-                    android:layout_marginBottom="25dp"
-                    android:layout_marginHorizontal="30dp"
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/confirmPasswordInputLayout"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/box_input"
-                    android:paddingVertical="22dp"
-                    android:paddingHorizontal="20dp"
-                    android:elevation="4dp"
-                    />
+                    android:layout_marginBottom="25dp"
+                    android:layout_marginHorizontal="30dp"
+                    app:endIconMode="password_toggle"
+                    app:boxStrokeColor="#000000"
+                    app:boxStrokeWidthFocused="2dp"
+                    app:boxStrokeWidth="1dp"
+                    app:boxCornerRadiusBottomEnd="8dp"
+                    app:boxCornerRadiusBottomStart="8dp"
+                    app:boxCornerRadiusTopEnd="8dp"
+                    app:boxCornerRadiusTopStart="8dp"
+                    app:boxBackgroundMode="none"
+                    app:hintEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/confirmPasswordEditText"
+                        android:inputType="textPassword"
+                        android:textColor="#000000"
+                        android:hint="Confirm password"
+                        android:textSize="14sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/box_input"
+                        android:paddingVertical="22dp"
+                        android:paddingHorizontal="20dp"
+                        android:elevation="4dp"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
                 <LinearLayout
                     android:id="@+id/registerButton"
                     android:layout_width="match_parent"
