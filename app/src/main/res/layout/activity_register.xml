@@ -159,10 +159,11 @@
                     <TextView
                         android:id="@+id/textRegisterButton"
                         android:textColor="#FFFFFF"
-                        android:textSize="18sp"
+                        android:textSize="20sp"
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
                         android:text="Register"
+                        android:textStyle="bold"
                         />
                 </LinearLayout>
                 <LinearLayout
