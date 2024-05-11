@@ -36,7 +36,7 @@ class RegisterActivity : AppCompatActivity() {
             val confirmPassword = binding.confirmPasswordEditText.text.toString()
 
             if (password == confirmPassword) {
-                if (email.isNotEmpty() && password.isNotEmpty() && name.isNotEmpty()) {
+                if (email.isNotEmpty() && password.isNotEmpty() && name.isNotEmpty() && confirmPassword.isNotEmpty()) {
                     firebaseAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener { authTask ->
                         if (authTask.isSuccessful) {
                             val user = authTask.result?.user
@@ -51,7 +51,7 @@ class RegisterActivity : AppCompatActivity() {
 
                                 db.collection("users").document(uid)
                                     .set(userData)
-                                    .addOnSuccessListener { documentReference -> android.util.Log.d(TAG, "DocumentSnapshot added with ID:") }
+                                    .addOnSuccessListener { _ -> android.util.Log.d(TAG, "DocumentSnapshot added with ID:") }
                                     .addOnFailureListener { e -> android.util.Log.w(TAG, "Error adding document", e) }
 
                                 val intent = Intent(this, MainActivity::class.java)
