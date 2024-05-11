@@ -64,11 +64,11 @@ class ProfileFragment : Fragment() {
                 .get()
                 .addOnSuccessListener { document ->
                     if (document.exists()) {
-                        val name = document.getString("name") ?: "Default Name"
-                        val email = document.getString("email") ?: "Default Email"
-                        val usia = document.getString("usia") ?: "Default Usia"
-                        val jk = document.getString("jk") ?: "Default JK"
-                        val bio = document.getString("bio") ?: "Default Bio"
+                        val name = document.getString("name") ?: "Name"
+                        val email = document.getString("email") ?: "Email"
+                        val usia = document.getString("usia") ?: "Usia"
+                        val jk = document.getString("jk") ?: "JK"
+                        val bio = document.getString("bio") ?: "Bio"
 
                         nameTextView.text = name
                         emailTextView.text = email

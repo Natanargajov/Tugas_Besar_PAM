@@ -4,6 +4,7 @@ import android.content.ContentValues.TAG
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import com.example.tugas_besar_pam.databinding.ActivityRegisterBinding
 import com.google.firebase.Firebase
@@ -46,13 +47,13 @@ class RegisterActivity : AppCompatActivity() {
                                 val userData = hashMapOf(
                                     "email" to email,
                                     "name" to name,
-                                    "uid" to uid
+                                    "uid" to uid,
                                 )
 
                                 db.collection("users").document(uid)
                                     .set(userData)
-                                    .addOnSuccessListener { _ -> android.util.Log.d(TAG, "DocumentSnapshot added with ID:") }
-                                    .addOnFailureListener { e -> android.util.Log.w(TAG, "Error adding document", e) }
+                                    .addOnSuccessListener { Log.d(TAG, "DocumentSnapshot successfully written!") }
+                                    .addOnFailureListener { e -> Log.w(TAG, "Error writing document", e) }
 
                                 val intent = Intent(this, MainActivity::class.java)
                                 startActivity(intent)
