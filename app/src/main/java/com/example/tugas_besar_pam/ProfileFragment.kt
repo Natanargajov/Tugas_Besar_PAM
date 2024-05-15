@@ -80,7 +80,7 @@ class ProfileFragment : Fragment() {
                         // Load the profile image from Firebase Storage
                         val storageRef = storage.reference.child("profile_images/$userId.jpg")
                         storageRef.downloadUrl.addOnSuccessListener { uri ->
-                            Glide.with(this).load(uri).into(imageProfile)
+                            Glide.with(this).load(uri).circleCrop().into(imageProfile)
                         }.addOnFailureListener { exception ->
                             println("Error loading image: ${exception.message}")
                         }
