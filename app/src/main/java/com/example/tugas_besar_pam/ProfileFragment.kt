@@ -9,14 +9,16 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.fragment.app.Fragment
+import com.bumptech.glide.Glide
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
-
+import com.google.firebase.storage.FirebaseStorage
 
 class ProfileFragment : Fragment() {
 
     private lateinit var firebaseAuth: FirebaseAuth
     private lateinit var db: FirebaseFirestore
+    private lateinit var storage: FirebaseStorage
     private lateinit var nameTextView: TextView
     private lateinit var emailTextView: TextView
     private lateinit var buttonLogout: Button
@@ -34,6 +36,7 @@ class ProfileFragment : Fragment() {
 
         db = FirebaseFirestore.getInstance()
         firebaseAuth = FirebaseAuth.getInstance()
+        storage = FirebaseStorage.getInstance()
 
         buttonLogout = view.findViewById(R.id.logoutButton)
         buttonEdit = view.findViewById(R.id.editButton)
@@ -43,7 +46,6 @@ class ProfileFragment : Fragment() {
         usiaTextView = view.findViewById(R.id.usiaTextView)
         jkTextView = view.findViewById(R.id.jkTextView)
         bioTextView = view.findViewById(R.id.bioTextView)
-
 
         buttonLogout.setOnClickListener {
             firebaseAuth.signOut()
@@ -56,7 +58,6 @@ class ProfileFragment : Fragment() {
             val intent = Intent(requireContext(), EditProfileActivity::class.java)
             startActivity(intent)
         }
-
 
         val currentUser = firebaseAuth.currentUser
         currentUser?.uid?.let { userId ->
@@ -76,13 +77,13 @@ class ProfileFragment : Fragment() {
                         jkTextView.text = jk
                         bioTextView.text = bio
 
-                        //val nameParts = name.split(" ")
-                        //val initials = if (nameParts.isNotEmpty()) {
-                        //    nameParts[0].firstOrNull()?.toString() ?: ""
-                        //} else {
-                        //    ""
-                        //}
-                        //imageProfile.text = initials
+                        // Load the profile image from Firebase Storage
+                        val storageRef = storage.reference.child("profile_images/$userId.jpg")
+                        storageRef.downloadUrl.addOnSuccessListener { uri ->
+                            Glide.with(this).load(uri).into(imageProfile)
+                        }.addOnFailureListener { exception ->
+                            println("Error loading image: ${exception.message}")
+                        }
 
                     } else {
                         println("Data not found")

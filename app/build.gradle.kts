@@ -68,6 +68,9 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)
+    implementation(libs.firebase.storage.ktx)
+    implementation(libs.firebase.firestore.ktx)
+    implementation(libs.firebase.auth.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -79,9 +82,6 @@ dependencies {
 
     //Page Indikator
     implementation("com.tbuonomo:dotsindicator:5.0")
-    implementation("com.google.firebase:firebase-auth:22.3.1")
-    implementation("com.google.firebase:firebase-database-ktx:20.3.1")
-    implementation("com.google.firebase:firebase-firestore:24.11.0")
-    implementation("com.google.firebase:firebase-crashlytics-buildtools:2.9.9")
-    implementation(platform("com.google.firebase:firebase-bom:32.8.0"))
+    implementation("com.github.bumptech.glide:glide:4.12.0")
+    annotationProcessor("com.github.bumptech.glide:compiler:4.12.0")
 }
