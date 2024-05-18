@@ -22,7 +22,6 @@ class EditProfileActivity : AppCompatActivity() {
     private lateinit var db: FirebaseFirestore
     private lateinit var storage: FirebaseStorage
     private lateinit var nameEditText: EditText
-    private lateinit var emailEditText: EditText
     private lateinit var saveButton: Button
     private lateinit var imageProfile: ImageView
     private lateinit var usiaEditText: EditText
@@ -44,7 +43,6 @@ class EditProfileActivity : AppCompatActivity() {
         saveButton = findViewById(R.id.simpanButton)
         imageProfile = findViewById(R.id.imageProfile)
         nameEditText = findViewById(R.id.nameEditText)
-        emailEditText = findViewById(R.id.emailEditText)
         usiaEditText = findViewById(R.id.usiaEditText)
         jkEditText = findViewById(R.id.jkEditText)
         bioEditText = findViewById(R.id.bioEditText)
@@ -71,7 +69,6 @@ class EditProfileActivity : AppCompatActivity() {
 
         saveButton.setOnClickListener {
             val name = nameEditText.text.toString()
-            val email = emailEditText.text.toString()
             val usia = usiaEditText.text.toString()
             val jk = jkEditText.text.toString()
             val bio = bioEditText.text.toString()
@@ -79,7 +76,6 @@ class EditProfileActivity : AppCompatActivity() {
             val currentUser = firebaseAuth.currentUser
             currentUser?.uid?.let { userId ->
                 val updateUserData = hashMapOf(
-                    "email" to email,
                     "name" to name,
                     "usia" to usia,
                     "jk" to jk,
