@@ -10,8 +10,6 @@
   <p>Eatera merupakan aplikasi pencarian masakan/tempat makan yang memudahkan pengguna untuk menemukan pilihan makanan        terbaik di berbagai tempat khususnya di sekitar kampus     ITERA. Dengan fitur pencarian canggih dan rekomendasi            personal, pengguna dapat dengan mudah menemukan tempat makan berdasarkan lokasi, jenis masakan, jarak, dan rating.          Eatera juga memungkinkan pengguna untuk melihat ulasan, menu, dan informasi lainnya yang berkaitan tentang tempat makan     yang ingin dilihat. Kemudian pengguna dapat menyimpan   daftar tempat makanan yang disukai ke daftar favorit. </p><br>
   
   <li><b>Project Team</b></li><br>
-  <ul type='disc'>
-  </ul>
 </ol>
 
 | NIM         | Nama                   |
