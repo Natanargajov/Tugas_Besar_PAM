@@ -11,16 +11,17 @@
   
   <li><b>Project Team</b></li><br>
   <ul type='disc'>
-| Nama                           | NIM             |
-|--------------------------------|-----------------|
-| Rizki Esa Fadillah             | 121140084       |
-| Fandu Dipo Anderson            | 121140033       |
-| Dimas Saputra                  | 121140059       |
-| Adriel Gideon Benedict Sirait  | 121140196       |
-| Natanael Argajova              | 121140205       |
   </ul>
-
 </ol>
+
+| NIM         | Nama                   |
+|-------------|------------------------|
+| Rizki Esa Fadillah  | 121140084       |
+| Fandu Dipo Anderson  | 121140033       |
+| Dimas Saputra   | 121140059       |
+| Adriel Gideon Benedict Sirait  | 121140196       |
+| Natanael Argajova  | 121140205       |
+
 
 ## Proposed Application
 
