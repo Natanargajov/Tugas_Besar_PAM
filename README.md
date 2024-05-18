@@ -12,7 +12,7 @@
   <li><b>Project Team</b></li><br>
 </ol>
 
-| NIM         | Nama                   |
+| Nama         | NIM                   |
 |-------------|------------------------|
 | Rizki Esa Fadillah  | 121140084       |
 | Fandu Dipo Anderson  | 121140033       |
