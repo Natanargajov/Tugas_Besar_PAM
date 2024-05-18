@@ -10,13 +10,14 @@
   <p>Eatera merupakan aplikasi pencarian masakan/tempat makan yang memudahkan pengguna untuk menemukan pilihan makanan        terbaik di berbagai tempat khususnya di sekitar kampus     ITERA. Dengan fitur pencarian canggih dan rekomendasi            personal, pengguna dapat dengan mudah menemukan tempat makan berdasarkan lokasi, jenis masakan, jarak, dan rating.          Eatera juga memungkinkan pengguna untuk melihat ulasan, menu, dan informasi lainnya yang berkaitan tentang tempat makan     yang ingin dilihat. Kemudian pengguna dapat menyimpan   daftar tempat makanan yang disukai ke daftar favorit. </p><br>
   
   <li><b>Project Team</b></li><br>
-  <ul type='disc'>
-    <li>Rizki Esa Fadillah		 	121140084</li>
-    <li>Fandu Dipo Anderson 		121140033</li>
-    <li>Dimas Saputra		 	121140059</li>
-    <li>Adriel Gideon Benedict Sirait 	121140196</li>
-    <li>Natanael Argajova 			121140205</li>
-  </ul>
+| Nama                          | Nim       |
+|-------------------------------|-----------|
+| Rizki Esa Fadillah            | 121140084 |
+| Fandu Dipo Anderson           | 121140033 |
+| Dimas Saputra                 | 121140059 |
+| Adriel Gideon Benedict Sirait | 121140196 |
+| Natanael Argajova             | 121140205 |
+
 </ol>
 
 ## Proposed Application
