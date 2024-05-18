@@ -17,6 +17,17 @@
     <li>Adriel Gideon Benedict Sirait 	121140196</li>
     <li>Natanael Argajova 			121140205</li>
   </ul>
+
+<ul type='disc'>
+| Nama                          | Nim       |
+|-------------------------------|-----------|
+| Rizki Esa Fadillah            | 121140084 |
+| Fandu Dipo Anderson           | 121140033 |
+| Dimas Saputra                 | 121140059 |
+| Adriel Gideon Benedict Sirait | 121140196 |
+| Natanael Argajova             | 121140205 |
+
+  </ul>
 </ol>
 
 ## Proposed Application
