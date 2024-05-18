@@ -62,37 +62,37 @@
   <ul type='disc'>
     <li><i>Activity Diagram</i></li><br>
       <ol type='1'>
-        <li></li>
-          <img src="">
-        <li></li>
-          <img src="">
-        <li></li>
-          <img src="">
-        <li></li>
-          <img src="">
-        <li></li>
-          <img src="">
-        <li></li>
-          <img src="">
-        <li></li>
-          <img src="">
+        <li><b>Login</b></li>
+          <img src="https://github.com/121140084-Rizki-Esa-Fadillah/Tugas_Besar_PAM/blob/master/Image/Activity_Diagram_Login.png">
+        <li><b>Register</b></li>
+          <img src="https://github.com/121140084-Rizki-Esa-Fadillah/Tugas_Besar_PAM/blob/master/Image/Activity_Diagram_Register.png">
+        <li><b>Search</b></li>
+          <img src="https://github.com/121140084-Rizki-Esa-Fadillah/Tugas_Besar_PAM/blob/master/Image/Activity_Diagram_Search.png">
+        <li><b>Menambahkan Tempat Makan Favorit</b></li>
+          <img src="https://github.com/121140084-Rizki-Esa-Fadillah/Tugas_Besar_PAM/blob/master/Image/Activity_Diagram_Add_Favorite.png">
+        <li><b>Menghapus Tempat Makan Favorit</b></li>
+          <img src="https://github.com/121140084-Rizki-Esa-Fadillah/Tugas_Besar_PAM/blob/master/Image/Activity_Diagram_Delete_Favorite.png">
+        <li><b>Edit profil</b></li>
+          <img src="https://github.com/121140084-Rizki-Esa-Fadillah/Tugas_Besar_PAM/blob/master/Image/Activity_Diagram_Edit_Profil.png">
+        <li><b>Logout</b></li>
+          <img src="https://github.com/121140084-Rizki-Esa-Fadillah/Tugas_Besar_PAM/blob/master/Image/Activity_Diagram_Logout.png">
       </ol><br>
     <li><i>Sequence Diagram</i></li><br>
       <ol type='1'>
-        <li></li>
-          <img src="">
-        <li></li>
-          <img src="">
-        <li></li>
-          <img src="">
-        <li></li>
-          <img src="">
-        <li></li>
-          <img src="">
-        <li></li>
-          <img src="">
-        <li></li>
-          <img src="">
+        <li><b>Login Sequence</b></li>
+          <img src="https://github.com/121140084-Rizki-Esa-Fadillah/Tugas_Besar_PAM/blob/master/Image/Login.png">
+        <li><b>Register Sequence</b></li>
+          <img src="https://github.com/121140084-Rizki-Esa-Fadillah/Tugas_Besar_PAM/blob/master/Image/Register.png">
+        <li><b>Search Sequence</b></li>
+          <img src="https://github.com/121140084-Rizki-Esa-Fadillah/Tugas_Besar_PAM/blob/master/Image/Search.png">
+        <li><b>Add Favorite Sequence</b></li>
+          <img src="https://github.com/121140084-Rizki-Esa-Fadillah/Tugas_Besar_PAM/blob/master/Image/Add_Favorite.png">
+        <li><b>Delete Favorite Sequence</b></li>
+          <img src="https://github.com/121140084-Rizki-Esa-Fadillah/Tugas_Besar_PAM/blob/master/Image/Delete_Favorite.png">
+        <li><b>Edit Profile Sequence</b></li>
+          <img src="https://github.com/121140084-Rizki-Esa-Fadillah/Tugas_Besar_PAM/blob/master/Image/Edit_Profile.png">
+        <li><b>Logout Sequence</b></li>
+          <img src="https://github.com/121140084-Rizki-Esa-Fadillah/Tugas_Besar_PAM/blob/master/Image/Logout.png">
       </ol>
   </ul><br>
 
